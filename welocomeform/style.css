@@ -1,0 +1,11 @@
+*{
+    margin: auto;
+    padding: 0;
+    background-color: gray;
+}
+
+.container{
+    margin: 300px 600px;
+    background: rgb(71, 2, 71);
+    color: white;
+}

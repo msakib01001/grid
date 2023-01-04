@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+    background-color: darkslateblue;
+    padding: 10px;
+    color: #fff;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+aside{
+    float: left;
+    display: block;
+    height: 100%;
+    width: 450px;
+    justify-content: center;
+    border: 1px solid rgb(71, 80, 90);
+    border-bottom: none;
+    background-color: darkgray;
+    color: #fff;
+    margin-top: 25px;
+}
+article{
+    display: flex-end;
+    justify-content: center;
+    background-color: rgb(31, 110, 110);
+    color: #fff;
+}
+.sec1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+.last_sec{
+    text-align: center;
+    overflow: hidden;
+}

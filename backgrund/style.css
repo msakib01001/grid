@@ -1,0 +1,16 @@
+.seet1 {
+    background-color:powderblue;
+    opacity: 0.9;
+}
+.seet1 p{
+    background-color: yellow;
+}
+.div1{
+    background: rgba(0, 128, 0, 0.2);
+}
+.div2{
+    background:  rgba(0, 128, 0, 0.6);
+}
+.div3{
+    background:  rgba(0, 128, 0, 1);
+}
