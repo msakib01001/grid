@@ -44,13 +44,14 @@ startQuiz.addEventListener("click", () => {
 });
 
 // All quiz data fetched from json
-const loadQuiz =async () => {
+const loadQuiz = async () => {
   fetch("./data/quiz.json")
     .then((r) => {
         return r.json();
     })
     .then((data) => {
         displayQuiz(data);
+        quizData = data
     });
 };
 
@@ -77,7 +78,7 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
-document.querySelector("#submit").addEventlistener("click", () => {
+document.querySelector("#submit").addEventListener("click", () => {
   if (answers.length < 6) {
     return;
   }
@@ -111,7 +112,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
@@ -124,7 +125,9 @@ document.querySelector("#submit").addEventlistener("click", () => {
         },
       ])
     );
-  } else {
+    
+  } 
+  else {
     localStorage.setItem(
       "results",
       JSON.stringify([
@@ -136,6 +139,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
       ])
     );
   }
+  console.log(JSON.parse(localStorage.getItem("results")))
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
